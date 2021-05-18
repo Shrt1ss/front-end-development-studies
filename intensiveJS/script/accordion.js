@@ -7,14 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(buttons);
     console.log(descriptions);
 
-    /* for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', () => {
-            descriptions[i].classList.toggle('hidden');
-            console.log(`descriptions: ${i}`, descriptions[i]);
-            buttons[i].classList.toggle('feature__link_active');
-            console.log(`buttons: ${i}`, buttons[i]);
-        });
-    }; */
+
     buttons.forEach((button, index) => {
         button.addEventListener('click', () => {
             if (button.classList.contains('feature__link_active')) {
