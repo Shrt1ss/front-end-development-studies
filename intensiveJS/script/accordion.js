@@ -4,10 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.feature__link');
     const descriptions = document.querySelectorAll('.feature-sub');
 
-    console.log(buttons);
-    console.log(descriptions);
-
-
     buttons.forEach((button, index) => {
         button.addEventListener('click', () => {
             if (button.classList.contains('feature__link_active')) {
