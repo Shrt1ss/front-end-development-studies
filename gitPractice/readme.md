@@ -1,1 +1,1 @@
-errors log
+I changed this file to test my git knowledge
