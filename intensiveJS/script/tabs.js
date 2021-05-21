@@ -4,7 +4,6 @@ const tabsHandlerElems = document.querySelectorAll('[data-tabs-handler]');
 const tabsFieldElems = document.querySelectorAll('[data-tabs-field]');
 const titleElems = document.querySelectorAll('.design__title');
 
-console.log(titleElems);
 for (const tab of tabsHandlerElems) {
     tab.addEventListener('click', () => {
         tabsHandlerElems.forEach(item => {
