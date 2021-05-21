@@ -6,4 +6,17 @@ const toggleMenu = () => {
     humburgerElem.classList.toggle('humburger-menu-active');
 };
 
+const closeMenu = () => {
+    menuElem.classList.remove('menu-active');
+    humburgerElem.classList.remove('humburger-menu-active');
+};
+
 humburgerElem.addEventListener('click', toggleMenu);
+
+menuElem.addEventListener('click', (event) => {
+    console.log(event.target);
+    const target = event.target;
+    if (target.classList.contains('menu-list__link')) {
+        closeMenu();
+    };
+});
