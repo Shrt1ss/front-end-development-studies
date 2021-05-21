@@ -1,0 +1,14 @@
+div {
+    width: 460px;
+    background-color: bisque;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+span {
+    position: relative;
+    left: 40%;
+    transform: translate(-50%, 0);
+}
+
