@@ -23,16 +23,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }; */
 
-    const inputPlace = document.querySelector('.input-place');
+    const inputPlace1 = document.querySelector('.input-place-1');
+    const inputPlace2 = document.querySelector('.input-place-2');
+    const inputPlace3 = document.querySelector('.input-place-3');
+
     const outPlace = document.querySelector('.place-for-out');
 
-    inputPlace.oninput = (event) => {
-        /* console.log(event.key);
-        out.push(event.key);
-        let str = out.join(''); */
+    inputPlace1.oninput = (event) => {
+
         let str = '';
-        str += inputPlace.value;
+
+        str += inputPlace1.value;
         outPlace.innerHTML = str;
+
         return str;
+    };
+
+    inputPlace2.onkeypress = (event) => {
+
+        outPlace.innerHTML = event.keyCode;
+        inputPlace2.value = event.key;
+
+        return false;
+    };
+
+    inputPlace3.onkeypress = (event) => {
+
+        if (event.keyCode >= 48 && event.keyCode <= 57) {
+            outPlace.innerHTML = 'FALSE';
+        } else {
+            outPlace.innerHTML = 'TRUE';
+        };
+
+        inputPlace3.value = event.key;
+
+        return false;
     };
 });
