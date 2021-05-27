@@ -1,0 +1,19 @@
+.block {
+    width: 300px;
+    height: 200px;
+    border: solid 2px black;
+    margin: 0px 0px 30px 0px;
+}
+.text-center {
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    margin: 0px 0px 30px 0px;
+}
+.block-min {
+    width: 80px;
+    height: 80px;
+    border: solid 2px black;
+    margin: 0px 0px 10px 0px;
+}
