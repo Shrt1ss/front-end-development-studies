@@ -2,8 +2,13 @@
     background-color: bisque;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     block-size: 50px;
+    margin: 20px;
 }
-
+.local-storage-clear {
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    block-size: 50px;
+}
 .description {
     text-align: center;
     background-color: bisque;
